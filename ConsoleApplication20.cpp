@@ -68,7 +68,7 @@ char tetrominoes[7][4][4] = {
     }
 };
 
-void Init() { //игровое поле, заполнеиие пробелами
+void Init() { 
     for (int i = 0; i < HEIGHT; i++) {
         for (int j = 0; j < WIDTH; j++) {
             field[i][j] = ' ';
@@ -76,7 +76,7 @@ void Init() { //игровое поле, заполнеиие пробелами
     }
 }
 
-void Draw() { //отрисовка игрового поля
+void Draw() { 
 
     system("cls");
     
@@ -119,7 +119,7 @@ void RotatePiece() {
     }
 }
 
-bool CheckCollision(int X, int Y) { //проверка на столкновение
+bool CheckCollision(int X, int Y) {
     for (int i = 0; i < 4; i++) {
         for (int j = 0; j < 4; j++) {
             if (currentPiece[i][j] != ' ') {
@@ -222,7 +222,7 @@ void gameOver() {
     exit(0);
 }
 
-void MainMenu() { //меню
+void MainMenu() { 
     system("cls");
     cout << "=================================================" << endl;
     cout << "||         Тетрис                              ||" << endl;
