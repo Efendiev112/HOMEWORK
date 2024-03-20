@@ -1,7 +1,7 @@
 ﻿#include <iostream>
 #include <conio.h>
 #include <windows.h>
-#include <ctime>
+
 
 using namespace std;
 
@@ -101,10 +101,10 @@ void Draw() { //отрисовка игрового поля
 }
 void RotatePiece() {
 
-    // создаем временный массив для сохранения повернутой фигуры
+    
     char tempPiece[4][4];
 
-    // копируем текущю фигуру во временный массив
+    
     for (int i = 0; i < 4; i++) {
         for (int j = 0; j < 4; j++) {
             tempPiece[i][j] = currentPiece[i][j];
@@ -175,7 +175,7 @@ void Update() {
             }
         }
 
-        // обновляем счетчик очков
+        
         score += linesCleared * 10;
 
         // ссброс текущей позиции фигуры
